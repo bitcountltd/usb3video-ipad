@@ -1,0 +1,61 @@
+name: U3VCamera
+options:
+  bundleIdPrefix: com.bitcount.u3v
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    DEVELOPMENT_TEAM: AW64FN32EV    # Bitcount ltd.
+    CODE_SIGN_STYLE: Automatic
+targets:
+  U3VDriver:
+    type: driver-extension
+    platform: iOS
+    sources:
+      - path: Driver
+      - path: Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.bitcount.u3v.camera.driver
+        PRODUCT_NAME: U3VDriver
+        INFOPLIST_FILE: Driver/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Driver/U3VDriver.entitlements
+        SDKROOT: driverkit
+        DRIVERKIT_DEPLOYMENT_TARGET: "23.0"
+        HEADER_SEARCH_PATHS: $(SRCROOT)/Shared
+        GCC_C_LANGUAGE_STANDARD: gnu11
+        CLANG_CXX_LANGUAGE_STANDARD: gnu++20
+        GENERATE_INFOPLIST_FILE: NO
+        SKIP_INSTALL: YES
+        SUPPORTED_PLATFORMS: driverkit
+        IPHONEOS_DEPLOYMENT_TARGET: ""
+        OTHER_LDFLAGS: -framework DriverKit -framework USBDriverKit
+  U3VCamera:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+      - path: Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.bitcount.u3v.camera
+        PRODUCT_NAME: U3VCamera
+        TARGETED_DEVICE_FAMILY: "2"
+        CODE_SIGN_ENTITLEMENTS: App/U3VCamera.entitlements
+        SWIFT_OBJC_BRIDGING_HEADER: App/U3VCamera-Bridging-Header.h
+        HEADER_SEARCH_PATHS: $(SRCROOT)/Shared
+        SWIFT_VERSION: "5.0"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown"
+        INFOPLIST_KEY_CFBundleDisplayName: U3V Camera
+        INFOPLIST_KEY_UIRequiresFullScreen: YES
+        MTL_FAST_MATH: YES
+    dependencies:
+      - target: U3VDriver
+        embed: true
+      - sdk: IOKit.framework
+      - sdk: Metal.framework
+      - sdk: MetalKit.framework

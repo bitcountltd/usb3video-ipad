@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25598C1B5370CAC30B3C5529 /* U3VUserClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9E6CC984513F31E834EC91E /* U3VUserClient.cpp */; };
+		267934ECFAF21AF9851D2316 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 18533BF1C3DC11840F5471D4 /* Shaders.metal */; };
+		3F3A8829331FD6AF2E42B70E /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9685203E4BF5EE8861B9D8 /* Metal.framework */; };
+		6C6A11BE7573F84EA3C6C3A6 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5131E5D1C9BF126F0FC721 /* CameraController.swift */; };
+		79AF7CDDBC2C4BE1C3126F0B /* USBInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BCEA1E28520CAAA3A6C39B /* USBInventory.swift */; };
+		7E2C3E4A9F792FA4D1895AD6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F706177BE9BF718A7D8304DD /* ContentView.swift */; };
+		8DA8AEF107C97FD764C368A6 /* GenICam.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD83BF4B8F5A63694862FA5C /* GenICam.swift */; };
+		8F13BDAE23150E26B3CF9B7C /* U3VDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EADE5742BCC62F2B97091165 /* U3VDriver.cpp */; };
+		9218FAC56B4A583D70EB1E8F /* U3VDriver.dext in Embed System Extensions */ = {isa = PBXBuildFile; fileRef = 7A9AF0ADF0187718DEBBD079 /* U3VDriver.dext */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AAAAA7592B41C1DC5880EDB7 /* FrameRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62F49859A967F74E52AF81 /* FrameRenderer.swift */; };
+		AB9EC54A92ADF5714420AE05 /* U3VDriver.iig in Sources */ = {isa = PBXBuildFile; fileRef = 354D1B01FFA76297E00FA954 /* U3VDriver.iig */; };
+		C69F1B34507A7E1558615B3B /* U3VUserClient.iig in Sources */ = {isa = PBXBuildFile; fileRef = 2933C294858EC46A8FBA955D /* U3VUserClient.iig */; };
+		D1F57F78279D8CEFC0F25EB4 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CDEE4B0D506589276877BD5 /* MetalKit.framework */; };
+		D3D2FBEA96B8C68D34CE02B8 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E4822FDA4DEFA607316915 /* IOKit.framework */; };
+		E021E858F5C45046EE14B766 /* DriverConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE35D06FAFE550F59D6C027C /* DriverConnection.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD386D39BE23CB5C234CDFDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FB54BE8246040FA89E78906 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C140578512854258D13ADB0;
+			remoteInfo = U3VDriver;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4B7794CFF19A5DA872D3E937 /* Embed System Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(SYSTEM_EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				9218FAC56B4A583D70EB1E8F /* U3VDriver.dext in Embed System Extensions */,
+			);
+			name = "Embed System Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		09F1E0E858E003D291516BF0 /* U3VCamera.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = U3VCamera.entitlements; sourceTree = "<group>"; };
+		18533BF1C3DC11840F5471D4 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		19BCEA1E28520CAAA3A6C39B /* USBInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USBInventory.swift; sourceTree = "<group>"; };
+		1ACF8B8919D387CAF8BD1FAA /* U3VCamera-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "U3VCamera-Bridging-Header.h"; sourceTree = "<group>"; };
+		2933C294858EC46A8FBA955D /* U3VUserClient.iig */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.iig; path = U3VUserClient.iig; sourceTree = "<group>"; };
+		2C67646D39C12432F644966A /* U3VCamera.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = U3VCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		354D1B01FFA76297E00FA954 /* U3VDriver.iig */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.iig; path = U3VDriver.iig; sourceTree = "<group>"; };
+		55F269DB5A1C60B51E3DEAD1 /* U3VShared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = U3VShared.h; sourceTree = "<group>"; };
+		5B84BA3CD9E413A89133253B /* U3VDriver.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = U3VDriver.entitlements; sourceTree = "<group>"; };
+		7A9AF0ADF0187718DEBBD079 /* U3VDriver.dext */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.driver-extension"; path = U3VDriver.dext; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C5131E5D1C9BF126F0FC721 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		9CDEE4B0D506589276877BD5 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		AD83BF4B8F5A63694862FA5C /* GenICam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenICam.swift; sourceTree = "<group>"; };
+		B5E4822FDA4DEFA607316915 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		BE35D06FAFE550F59D6C027C /* DriverConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverConnection.swift; sourceTree = "<group>"; };
+		CE9685203E4BF5EE8861B9D8 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		CE999430D028EA0C93E7D85E /* U3VProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = U3VProtocol.h; sourceTree = "<group>"; };
+		EADE5742BCC62F2B97091165 /* U3VDriver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = U3VDriver.cpp; sourceTree = "<group>"; };
+		EE2A94B03BDE5CFC8D50708F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F706177BE9BF718A7D8304DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F9E6CC984513F31E834EC91E /* U3VUserClient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = U3VUserClient.cpp; sourceTree = "<group>"; };
+		FA62F49859A967F74E52AF81 /* FrameRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameRenderer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B3F524346D9845EB61BB289 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3D2FBEA96B8C68D34CE02B8 /* IOKit.framework in Frameworks */,
+				3F3A8829331FD6AF2E42B70E /* Metal.framework in Frameworks */,
+				D1F57F78279D8CEFC0F25EB4 /* MetalKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0801D83FBE27A98F0A029D68 = {
+			isa = PBXGroup;
+			children = (
+				2BABDC0FC9E0CB5B9D6318E5 /* App */,
+				CE124C585CE6FDF7F33DEC7E /* Driver */,
+				6947B731D8FB38224A62FC85 /* Shared */,
+				FC4ABCBECB460B6B7625C62C /* Frameworks */,
+				7B3D982ED38D35D8E58E6D38 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2BABDC0FC9E0CB5B9D6318E5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7C5131E5D1C9BF126F0FC721 /* CameraController.swift */,
+				F706177BE9BF718A7D8304DD /* ContentView.swift */,
+				BE35D06FAFE550F59D6C027C /* DriverConnection.swift */,
+				FA62F49859A967F74E52AF81 /* FrameRenderer.swift */,
+				AD83BF4B8F5A63694862FA5C /* GenICam.swift */,
+				18533BF1C3DC11840F5471D4 /* Shaders.metal */,
+				1ACF8B8919D387CAF8BD1FAA /* U3VCamera-Bridging-Header.h */,
+				09F1E0E858E003D291516BF0 /* U3VCamera.entitlements */,
+				19BCEA1E28520CAAA3A6C39B /* USBInventory.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6947B731D8FB38224A62FC85 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				55F269DB5A1C60B51E3DEAD1 /* U3VShared.h */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		7B3D982ED38D35D8E58E6D38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C67646D39C12432F644966A /* U3VCamera.app */,
+				7A9AF0ADF0187718DEBBD079 /* U3VDriver.dext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE124C585CE6FDF7F33DEC7E /* Driver */ = {
+			isa = PBXGroup;
+			children = (
+				EE2A94B03BDE5CFC8D50708F /* Info.plist */,
+				EADE5742BCC62F2B97091165 /* U3VDriver.cpp */,
+				5B84BA3CD9E413A89133253B /* U3VDriver.entitlements */,
+				354D1B01FFA76297E00FA954 /* U3VDriver.iig */,
+				CE999430D028EA0C93E7D85E /* U3VProtocol.h */,
+				F9E6CC984513F31E834EC91E /* U3VUserClient.cpp */,
+				2933C294858EC46A8FBA955D /* U3VUserClient.iig */,
+			);
+			path = Driver;
+			sourceTree = "<group>";
+		};
+		FC4ABCBECB460B6B7625C62C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5E4822FDA4DEFA607316915 /* IOKit.framework */,
+				CE9685203E4BF5EE8861B9D8 /* Metal.framework */,
+				9CDEE4B0D506589276877BD5 /* MetalKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C140578512854258D13ADB0 /* U3VDriver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 975A6AB8BCB51B6EE693BD56 /* Build configuration list for PBXNativeTarget "U3VDriver" */;
+			buildPhases = (
+				CED16DC8AB9EF38029191A88 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = U3VDriver;
+			packageProductDependencies = (
+			);
+			productName = U3VDriver;
+			productReference = 7A9AF0ADF0187718DEBBD079 /* U3VDriver.dext */;
+			productType = "com.apple.product-type.driver-extension";
+		};
+		862E66CF3334B48B487C73A7 /* U3VCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F05EFC802A4FFCA9747DDC4 /* Build configuration list for PBXNativeTarget "U3VCamera" */;
+			buildPhases = (
+				64EE2B28E3D3C7DCED330427 /* Sources */,
+				0B3F524346D9845EB61BB289 /* Frameworks */,
+				4B7794CFF19A5DA872D3E937 /* Embed System Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11442778C3320BEC39A9D8E8 /* PBXTargetDependency */,
+			);
+			name = U3VCamera;
+			packageProductDependencies = (
+			);
+			productName = U3VCamera;
+			productReference = 2C67646D39C12432F644966A /* U3VCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6FB54BE8246040FA89E78906 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3C140578512854258D13ADB0 = {
+						DevelopmentTeam = AW64FN32EV;
+						ProvisioningStyle = Automatic;
+					};
+					862E66CF3334B48B487C73A7 = {
+						DevelopmentTeam = AW64FN32EV;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 02FB184B817BC51DCFA20D2A /* Build configuration list for PBXProject "U3VCamera" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 0801D83FBE27A98F0A029D68;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 7B3D982ED38D35D8E58E6D38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				862E66CF3334B48B487C73A7 /* U3VCamera */,
+				3C140578512854258D13ADB0 /* U3VDriver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64EE2B28E3D3C7DCED330427 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C6A11BE7573F84EA3C6C3A6 /* CameraController.swift in Sources */,
+				7E2C3E4A9F792FA4D1895AD6 /* ContentView.swift in Sources */,
+				E021E858F5C45046EE14B766 /* DriverConnection.swift in Sources */,
+				AAAAA7592B41C1DC5880EDB7 /* FrameRenderer.swift in Sources */,
+				8DA8AEF107C97FD764C368A6 /* GenICam.swift in Sources */,
+				267934ECFAF21AF9851D2316 /* Shaders.metal in Sources */,
+				79AF7CDDBC2C4BE1C3126F0B /* USBInventory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED16DC8AB9EF38029191A88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F13BDAE23150E26B3CF9B7C /* U3VDriver.cpp in Sources */,
+				AB9EC54A92ADF5714420AE05 /* U3VDriver.iig in Sources */,
+				25598C1B5370CAC30B3C5529 /* U3VUserClient.cpp in Sources */,
+				C69F1B34507A7E1558615B3B /* U3VUserClient.iig in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11442778C3320BEC39A9D8E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C140578512854258D13ADB0 /* U3VDriver */;
+			targetProxy = DD386D39BE23CB5C234CDFDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		33E87F030DD60A57D4701C55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/U3VCamera.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Shared";
+				INFOPLIST_KEY_CFBundleDisplayName = "U3V Camera";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitcount.u3v.camera;
+				PRODUCT_NAME = U3VCamera;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "App/U3VCamera-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		831E1E6A84F3A8906C3CA245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = Driver/U3VDriver.entitlements;
+				DRIVERKIT_DEPLOYMENT_TARGET = 23.0;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Shared";
+				INFOPLIST_FILE = Driver/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-framework DriverKit -framework USBDriverKit";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitcount.u3v.camera.driver;
+				PRODUCT_NAME = U3VDriver;
+				SDKROOT = driverkit;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = driverkit;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		83C5B54542F926623D16AE75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = Driver/U3VDriver.entitlements;
+				DRIVERKIT_DEPLOYMENT_TARGET = 23.0;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Shared";
+				INFOPLIST_FILE = Driver/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-framework DriverKit -framework USBDriverKit";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitcount.u3v.camera.driver;
+				PRODUCT_NAME = U3VDriver;
+				SDKROOT = driverkit;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = driverkit;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A77BFC27E991C852199EFEE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = AW64FN32EV;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B47DF22607E29353A2895E37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = AW64FN32EV;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E039A18778F770CACF236243 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/U3VCamera.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Shared";
+				INFOPLIST_KEY_CFBundleDisplayName = "U3V Camera";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitcount.u3v.camera;
+				PRODUCT_NAME = U3VCamera;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "App/U3VCamera-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02FB184B817BC51DCFA20D2A /* Build configuration list for PBXProject "U3VCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B47DF22607E29353A2895E37 /* Debug */,
+				A77BFC27E991C852199EFEE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6F05EFC802A4FFCA9747DDC4 /* Build configuration list for PBXNativeTarget "U3VCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E039A18778F770CACF236243 /* Debug */,
+				33E87F030DD60A57D4701C55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		975A6AB8BCB51B6EE693BD56 /* Build configuration list for PBXNativeTarget "U3VDriver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83C5B54542F926623D16AE75 /* Debug */,
+				831E1E6A84F3A8906C3CA245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6FB54BE8246040FA89E78906 /* Project object */;
+}
