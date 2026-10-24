@@ -86,3 +86,7 @@ Confirmed working on an iPad Air (M4): the driver matches the camera and streams
 * **Power.** If the camera browns out on the iPad's port, use a powered USB‑C hub.
 
 Logs from the driver: Console.app with the iPad selected, filter on `U3VDriver`.
+
+## License
+
+MIT, see [LICENSE](LICENSE).
